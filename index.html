@@ -3,95 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 27 (Object)</title>
+    <title>Class 26 Practice</title>
 </head>
 <body>
+    Object, Prototype, Primitive & Non Primitive (copy by value and copy by reference)
     <script>
-        // console.log("Hello World");
+        var farasat = {
+    name: "Farasat",
+    id: 1,
+    userAge: 18,
+    greet: function () {
+        console.log("Hello Class I am " + this.name)
+    },
+    "ameen": "ameen",
+    1: "ameen"
+}
+
+// console.log(farasat)
+
+// let arr = [1, 2]
+// console.log(arr)
+
+// farasat.email = "abc@gmail.com"
+
+// delete farasat.id
+
+// console.log(farasat.greet())
 
 
-// x = 10
+// function User(name, email) {
+//     this.name = name;
+//     this.email = email;
+// }
 
-// let x
-
-// const a = 10
-
-
-// if (true) {
-//     let abc = 10
-//     var x = 10
+// User.prototype.greet = function () {
+//     console.log("Hello" + this.email)
 // }
 
 
-// function abc() {
-//     var y = 10
+// const farasat1 = new User("Farasat", "abc@gmail.com")
+// const farasat2 = new User("Farasat2", "abc2@gmail.com")
+// console.log(farasat1.greet())
+// console.log(farasat2)
+
+// console.log(farasat["userAge"])
+
+// for (var key in farasat) {
+//     let sumUp = `${key}: ${farasat[key]}`
+//     console.log(sumUp)
 // }
 
 
 
-// (function () {
-//     var a = 10
-// }())
-
-// console.log(x)
-// console.log(y)
-
-// const arr = [1, 2, 3, 4, 5, 6, 7]
-// const even = [2, 4, 6, 8]
-
-// // arr.forEach(function (item) {
-// //     console.log(item)
-// // })
-
-// let oddeach = arr.forEach(item => item + 1)
-
-// let odd = even.map(item => item + 1)
-
-// let evenNumber = arr.filter((item) => item % 2 === 0)
-// console.log(evenNumber)
-// console.log(odd)
-// console.log(oddeach)
-
-// const abc = () => {
+// for (let objKey in farasat) {
+//     // console.log(farasat[objKey], typeof (objKey))
+//     console.log(farasat[objKey])
 
 // }
 
+// Primitive & Non Primitive
 
-// function add(x, y = 5) {
-//     return x + y
-// }
+// Number, string, boolean, object, undefined, null, Symbol
 
-// let val = add(1, 2)
-// console.log(val)
+// Primitive
 
-// function add(a, b, c, ...x) {
-//     let val = 0
-//     x.forEach(item => val += item)
-//     return a + b + c + val
-// }
+// Number, string, boolean, undefined, null, Symbol
 
-// let val = add(1, 2, 3)
-// console.log(val)
+// Non-Primitive
 
+// object
 
-// const arr1 = [1, 2, 3, 4]
-// const arr2 = [5, 6, ...arr1]
-// console.log(arr2[3]++)
+// Primitive
+// let a = true
+// let b = a
 
+// b = false
+// // b++
+// console.log(a)
+// console.log(b)
 
-// const arr3 = [...arr1]
+// // Non Primitive
+// let aObj = { num: true }
+// let bObj = aObj
 
-// arr3[1]++
-// console.log(arr3)
-// console.log(arr1)
+// bObj.num = false
+// // bObj.num++
 
-// if(arr3[1] === 3) {
-    
-// }
-
-// const myLuckyNumber = `My Lucky Number is ${arr3[1] === 3 ? 'Hurray' : 'Else'}`
-// console.log(myLuckyNumber)
+// console.log(aObj)
+// console.log(bObj)
     </script>
 </body>
 </html>
-!
